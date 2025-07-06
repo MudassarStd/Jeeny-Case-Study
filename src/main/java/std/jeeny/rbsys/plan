@@ -1,0 +1,18 @@
+Auth:
+POST: /api/auth/register
+POST: /api/auth/login (simple dummy simulation)
+
+Passenger:
+
+POST: /api/passenger/request-ride
+GET: /api/passenger/ride-status/{rideId}
+GET: /api/passenger/ride-history
+GET: /api/passenger/available-drivers (my assumption)
+
+Driver:
+
+GET: /api/driver/pending-requests
+POST: /api/driver/respond/{rideId} -> (actions: accept/reject)
+POST: /api/driver/start-ride/{rideId}
+POST: /api/driver/complete-ride/{rideId}
+POST: /api/driver/set-status
